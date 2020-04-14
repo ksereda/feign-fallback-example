@@ -6,7 +6,7 @@
 
 The `client` calls `service-one` through Feign and receives the string `"Get String from SERVICE-ONE"`.
 
-Еру `сlient` also calls `service-two` through Feign and gets the string `"Get String from SERVICE-TWO"`.
+The `сlient` also calls `service-two` through Feign and gets the string `"Get String from SERVICE-TWO"`.
 
 #### Prerequisite:
 
