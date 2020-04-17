@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '2.1.5.RELEASE'
+	id 'org.springframework.boot' version '1.5.9.RELEASE'
 	id 'java'
 }
 
@@ -14,16 +14,20 @@ repositories {
 }
 
 ext {
-	set('springCloudServicesVersion', "2.1.4.RELEASE")
-	set('springCloudVersion', "Greenwich.SR1")
+	set('springCloudServicesVersion', "1.6.4.RELEASE")
+	set('springCloudVersion', "Edgware.SR3")
 }
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation 'io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
+
 	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
-	//	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign', version: '2.2.0.RELEASE'
+//		compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign', version: '1.4.4.RELEASE'
 
 //	compile group: 'com.netflix.feign', name: 'feign-httpclient', version: '8.5.0'
 
